@@ -53,7 +53,7 @@ variable "node_pool1_type" {
 
 variable "node_pool1_taints" {
   description = "Taints for the first node pool."
-  default     = [{ key = "app", value = "release1", effect = "NO_SCHEDULE" }]
+  default     = [{ key = "app", value = "release1", effect = "NoSchedule" }]
 }
 
 variable "node_pool2_name" {
