@@ -1,5 +1,5 @@
 # Use an official Python as base image
-FROM python:3.8-slim
+FROM python:latest
 
 # Set the working directory to /app
 WORKDIR /app
@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . /app
 
 # Install dependencies
-RUN pip install --trusted-host pypi.python.org -r requirements.txt
+RUN pip3 install --trusted-host pypi.python.org -r requirements.txt
 
 # Make port 8000 available to the world outside this container
 EXPOSE 8000
@@ -17,4 +17,4 @@ EXPOSE 8000
 ENV FLASK_ENV=production
 
 # Run app.py when the container launches
-CMD ["python", "app.py"]
+CMD [ "python3", "app.py" ]
