@@ -4,6 +4,17 @@ This project is a sample template for deploying a Flask web application on Amazo
 
 It also includes IAM-related files for configuring permissions. Below is an overview of the project structure and instructions on how to use it.
 
+## Task Differentiation
+
+* Write me a terraform module to spawn up a kubernetes cluster with two node pools using variables (like the node pool name, type, ...), each node pool should have its own taints (feel free to use ready terraform modules).
+*We need to implement IRS to give a service account for the below application access to the S3.
+* You need to deploy an application (two releases) on the two node groups (flask helm chart or whatever other web servers you would like) with simple text to submit in the page which will write these data to a file on the S3 in the following CSV format:
+TIMESTAMP,APP SOURCE, MESSAGE PAYLOAD timestamp,app1,message timestamp,app2,message2
+timestamp,app2,message3
+timestamp,app1,message4
+and so on ...
+* Extra: apply synchronization between the two applications :D
+
 ## Project Structure
 
 - **flask-app**: This directory contains a Flask web application.
