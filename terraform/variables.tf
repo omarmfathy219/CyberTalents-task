@@ -59,6 +59,7 @@ variable "node_pool1_taints" {
 variable "node_pool2_name" {
   description = "Name of the second node pool."
   default     = "node-pool-2"
+  name        = "node-pool-2"
 }
 
 variable "node_pool2_type" {

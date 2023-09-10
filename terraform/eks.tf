@@ -20,6 +20,7 @@ module "eks" {
       min_size     = 1
       max_size     = 2
       desired_size = 1
+      node_group_name = "node-pool-1"
 
       instance_types = [var.node_pool1_type]
       capacity_type  = "ON_DEMAND"
@@ -33,6 +34,7 @@ module "eks" {
       min_size     = 1
       max_size     = 2
       desired_size = 1
+      node_group_name = "node-pool-2"
 
       instance_types = [var.node_pool2_type]
       capacity_type  = "ON_DEMAND"
