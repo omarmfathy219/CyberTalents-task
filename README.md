@@ -60,6 +60,7 @@ Ensure that your AWS resources' IAM roles and permissions are configured correct
 
 ## Point to Improve
 - Using Helm for deploying applications.
+- Apply synchronization between the two applications.
 
 ## Resources I Used
 
