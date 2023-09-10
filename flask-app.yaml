@@ -15,8 +15,8 @@ spec:
       tolerations:
       - key: app
         operator: Equal
-        value: release2
-        effect: NoExecute  
+        value: release1
+        effect: NoSchedule
       containers:
       - name: my-app-container
         image: omarmfathy219/flask-app:v4
