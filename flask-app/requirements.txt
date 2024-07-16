@@ -16,4 +16,4 @@ requests==2.32.2
 s3transfer==0.6.2
 urllib3==1.26.19
 Werkzeug==3.0.3
-zipp==3.16.2
+zipp==3.19.1
